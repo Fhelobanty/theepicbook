@@ -1,2 +1,13 @@
 node_modules
 .DS_Store
+# Ansible and SSH protection
+*.pem
+*.key
+ansible/inventory.ini
+ansible/group_vars/*/vault.yml
+*.retry
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
