@@ -1,0 +1,10 @@
+
+trigger:
+  - none
+
+pool:
+  name: Default
+
+steps:
+  - script: echo "EpicBook application pipeline is connected."
+    displayName: "Verify application pipeline"
