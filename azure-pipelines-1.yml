@@ -1,9 +1,4 @@
-trigger:
-  - none
-
-pool:
-  name: Default
-
-steps:
-  - script: echo "EpicBook application pipeline is connected."
-    displayName: "Verify application pipeline"
+  - script: |
+      echo "INTENTIONAL FAILURE DRILL: validation step only"
+      exit 1
+    displayName: "Intentional failure drill (pre-deployment)"
