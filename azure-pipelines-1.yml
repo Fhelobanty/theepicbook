@@ -6,12 +6,5 @@ pool:
   name: Default
 
 steps:
-  - checkout: self
-    displayName: "Checkout application repository"
-
-  - script: |
-      echo "EpicBook application pipeline is connected."
-      echo "Recovery verification: intentional failure drill removed."
-      echo "Application pipeline validation completed successfully."
+  - script: echo "EpicBook application pipeline is connected."
     displayName: "Verify application pipeline"
-s
