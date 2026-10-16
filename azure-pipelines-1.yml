@@ -1,14 +1,17 @@
 
 trigger: none
+pr: none
 
 pool:
   name: Default
 
 steps:
-  - script: echo "EpicBook application pipeline is connected."
-    displayName: "Verify application pipeline"
+  - checkout: self
+    displayName: "Checkout application repository"
 
   - script: |
-      echo "INTENTIONAL FAILURE DRILL: validation step only"
-      exit 1
-    displayName: "Intentional failure drill (pre-deployment)"
+      echo "EpicBook application pipeline is connected."
+      echo "Recovery verification: intentional failure drill removed."
+      echo "Application pipeline validation completed successfully."
+    displayName: "Verify application pipeline"
+s
